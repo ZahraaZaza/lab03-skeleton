@@ -1,104 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="24"
-    build-mode="FULL"
-    density="xxhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    build-mode="COLD"
+    density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504839952452"
-    token="-3481288860898528196"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1504905003567"
+    token="-3668522917380506411"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="594" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="78" />
     <task
         name="verifier"
-        duration="0" />
+        duration="63" />
 
     <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
+        location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1504839952452"
+        timestamp="1504903094403"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\owner\gitstuff\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504903652741"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504905003567"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="I:\Fall2017\MobileDev\lab3\lab03-skeleton\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

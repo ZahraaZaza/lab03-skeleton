@@ -36,8 +36,7 @@ public class ActivityOne extends Activity {
 
 			//TODO: update the appropriate count variable & update the view
 			createCounter++;
-			TextView textView = (TextView) findViewById(R.id.create);
-			textView.setText("onCreate() calls: " + createCounter);
+			updateCounters();
 		}
 
 		@Override
@@ -58,8 +57,7 @@ public class ActivityOne extends Activity {
 			
 			//TODO:  update the appropriate count variable & update the view
 			startCounter++;
-			TextView textView = (TextView) findViewById(R.id.start);
-			textView.setText("onStart() calls: " + startCounter);
+			updateCounters();
 		}
 
 	    // TODO: implement 5 missing lifecycle callback methods
@@ -72,8 +70,7 @@ public class ActivityOne extends Activity {
 			Log.i(TAG, "onResume called");
 
 			resumeCounter++;
-			TextView textView = (TextView) findViewById(R.id.resume);
-			textView.setText("onResume() calls: " + resumeCounter);
+			updateCounters();
 		}
 
 		@Override
@@ -84,8 +81,7 @@ public class ActivityOne extends Activity {
 			Log.i(TAG, "onPause called");
 
 			pauseCounter++;
-			TextView textView = (TextView) findViewById(R.id.pause);
-			textView.setText("onPause() calls: " + pauseCounter);
+			updateCounters();
 		}
 
 		@Override
@@ -96,8 +92,7 @@ public class ActivityOne extends Activity {
 			Log.i(TAG, "onStop called");
 
 			stopCounter++;
-			TextView textView = (TextView) findViewById(R.id.stop);
-			textView.setText("onStop() calls: " + stopCounter);
+			updateCounters();
 		}
 
 		@Override
@@ -108,8 +103,7 @@ public class ActivityOne extends Activity {
 			Log.i(TAG, "onDestroy called");
 
 			destroyCounter++;
-			TextView textView = (TextView) findViewById(R.id.destroy);
-			textView.setText("onDestroy() calls: " + destroyCounter);
+			updateCounters();
 		}
 
 		@Override
@@ -120,17 +114,67 @@ public class ActivityOne extends Activity {
 			Log.i(TAG, "onRestart called");
 
 			restartCounter++;
-			TextView textView = (TextView) findViewById(R.id.restart);
-			textView.setText("onRestart() calls: " + restartCounter);
+			updateCounters();
 		}
 
 		@Override
 		public void onSaveInstanceState(Bundle savedInstanceState){
 			//TODO:  save state information with a collection of key-value pairs & save all  count variables
+
+			super.onSaveInstanceState(savedInstanceState);
+			Log.d(TAG, "onSaveInstanceState()");
+			savedInstanceState.putInt("createCounter", createCounter);
+			savedInstanceState.putInt("startCounter", startCounter);
+			savedInstanceState.putInt("resumeCounter", resumeCounter);
+			savedInstanceState.putInt("pauseCounter", pauseCounter);
+			savedInstanceState.putInt("stopCounter", stopCounter);
+			savedInstanceState.putInt("destroyCounter", destroyCounter);
+			savedInstanceState.putInt("restartCounter", restartCounter);
 		}
 
+		// only called if activity killed
+		// restore savedInstanceState here or in onCreate(Bundle)
+		public void onRestoreInstanceState(Bundle savedInstanceState) {
+			super.onRestoreInstanceState(savedInstanceState);
+			Log.d(TAG, "onRestoreInstanceState()");
+			// restore savedInstanceState here or in onCreate(Bundle)
+			createCounter = savedInstanceState.getInt("createCounter");
+			startCounter = savedInstanceState.getInt("startCounter");
+			resumeCounter = savedInstanceState.getInt("resumeCounter");
+			pauseCounter = savedInstanceState.getInt("pauseCounter");
+			stopCounter = savedInstanceState.getInt("stopCounter");
+			destroyCounter = savedInstanceState.getInt("destroyCounter");
+			restartCounter = savedInstanceState.getInt("restardCounter");
+
+			updateCounters();
+		}
+
+		private void updateCounters(){
+			TextView createTextView = (TextView) findViewById(R.id.create);
+			createTextView.setText("onCreate() calls: " + createCounter);
+
+			TextView startTextView = (TextView) findViewById(R.id.start);
+			startTextView.setText("onStart() calls: " + startCounter);
+
+			TextView resumeTextView = (TextView) findViewById(R.id.resume);
+			resumeTextView.setText("onResume() calls: " + resumeCounter);
+
+			TextView pauseTextView = (TextView) findViewById(R.id.pause);
+			pauseTextView.setText("onPause() calls: " + pauseCounter);
+
+			TextView stopTextView = (TextView) findViewById(R.id.stop);
+			stopTextView.setText("onStop() calls: " + stopCounter);
+
+			TextView destroyTextView = (TextView) findViewById(R.id.destroy);
+			destroyTextView.setText("onDestroy() calls: " + destroyCounter);
+
+			TextView restartTextView = (TextView) findViewById(R.id.restart);
+			restartTextView.setText("onRestart() calls: " + restartCounter);
+
+		}
 
 		public void launchActivityTwo(View view) {
+
 			startActivity(new Intent(this, ActivityTwo.class));
 		}
 		
