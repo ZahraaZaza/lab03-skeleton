@@ -120,7 +120,7 @@ public class ActivityOne extends Activity {
 		@Override
 		public void onSaveInstanceState(Bundle savedInstanceState){
 			//TODO:  save state information with a collection of key-value pairs & save all  count variables
-
+			// always need to call super
 			super.onSaveInstanceState(savedInstanceState);
 			Log.d(TAG, "onSaveInstanceState()");
 			savedInstanceState.putInt("createCounter", createCounter);
